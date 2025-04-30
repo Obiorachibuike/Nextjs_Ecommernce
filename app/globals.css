@@ -2,57 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  list-style-type: none;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.background {
+  background-image: url("/image/background-wall.jpg");
+  padding: 20px;
+  min-height: 500px;
+  background-position: center;
+  background-attachment: fixed;
 }
-
+a {
+  color: #6c757d;
+}
 body {
-  color: black;
-  background: white;
+  background-color: white;
 }
-
-.side_nav_container {
-  color: white;
-  background-color: #111827;
-  width: 300px;
-  padding: 30px;
-  line-height: 3;
-  height: 700px;
-  overflow: auto;
-  position: fixed;
+.dashboard {
+  transition: 0.3s all;
 }
-.admin_cont{
-  display: flex;
-  justify-content: space-between;
-}
-.language-selector select{
-  padding: 10px;
-  background: white;
-  color: black;
-  width: 80%;
-}
-.admin_main{
-  margin-left: 350px;
-}
-
-.side_nav_container a{
-  width: 100%;
-  display: grid;
-  padding-left: 30px;
-}
-.side_nav_container a:hover{
-  background: #6f6f6f;
-}
-body{
-  color: "black"
+.svg-inline--fa {
+  font: 25px;
 }
